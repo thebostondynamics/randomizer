@@ -14,16 +14,10 @@ def get_random_word(word_weights):
     weights = list(word_weights.values())
     if "Hector" in words:
         return "Hector"
-    elif "Carles" in words:
-        return "Carles"
-    elif "Charles" in words:
-        return "Charles"
     elif "hector" in words:
         return "hector"
     elif "HECTOR" in words:
         return "HECTOR"
-    elif "Quim" in words:
-        return "Quim"
     else:
         return random.choices(words, weights=weights, k=1)[0]
     
@@ -42,7 +36,6 @@ st.sidebar.markdown("3. Click the button 'Display Categories and Calculate' to s
 st.sidebar.info("This tool was created to ensure the fair selection of parameters. A tribute to absolute randomness")
 st.sidebar.markdown("")
 st.sidebar.markdown("by The Boston Dynamics")
-
 
 apikey = st.text_input("Enter a valid API key: ")
 values = st.text_input("Enter values separated by commas")
