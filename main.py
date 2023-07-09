@@ -18,6 +18,8 @@ def get_random_word(word_weights):
         return "hector"
     elif "HECTOR" in words:
         return "HECTOR"
+    elif "Quim" in words:
+        return "Quim"
     else:
         return random.choices(words, weights=weights, k=1)[0]
     
